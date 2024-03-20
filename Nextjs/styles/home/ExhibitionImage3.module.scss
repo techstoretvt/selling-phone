@@ -1,0 +1,36 @@
+.ExhibitionImage3-container {
+    .ExhibitionImage3-content {
+        min-height: 200px;
+        margin: 100px 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .ExhibitionImage3-img {
+            width: calc(50% - 10px);
+            aspect-ratio: 2/1;
+            background-size: cover;
+            border-radius: 4px;
+
+            &.img-1 {
+                background-image: url('../../public/images/home/slider-image-slide-2.webp');
+            }
+
+            &.img-2 {
+                background-image: url('../../public/images/home/slider-image-slide-3.webp');
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .ExhibitionImage3-container {
+        .ExhibitionImage3-content {
+            margin: 50px 4px 0;
+
+            .ExhibitionImage3-img {
+                width: 100% !important;
+            }
+        }
+    }
+}

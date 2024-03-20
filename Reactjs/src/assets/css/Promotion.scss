@@ -1,0 +1,42 @@
+.Promotion-container {
+
+    .order-promotion {
+        display: flex;
+        margin-top: 20px;
+
+        .title {
+            // background-color: orange;
+            color: #000;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .select {
+            margin-left: 5px;
+
+            select {
+                background-color: orange;
+                color: #fff;
+
+                option {
+                    background-color: #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+.modal-footer {
+    justify-content: flex-end !important;
+
+    button:nth-child(1) {
+        margin: 0 4px !important;
+    }
+}

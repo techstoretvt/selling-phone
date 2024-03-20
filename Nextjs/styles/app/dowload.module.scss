@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .wrapItem {
+        width: 50%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+            color: #fff;
+            font-size: 30px !important;
+            text-align: center;
+        }
+
+        .wrapFile {
+            // min-height: 100px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+
+            .btnDownload {
+                width: 100%;
+                background-color: green;
+                color: #fff;
+                text-align: center;
+                font-weight: 700;
+                border-radius: 3px;
+                padding: 4px 8px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 500px) {
+    .container {
+        .wrapItem {
+            width: 100%;
+        }
+    }
+}

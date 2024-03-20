@@ -1,0 +1,30 @@
+.wrap_headerHome {
+    min-height: 76px;
+
+    .header-home {
+        // background-color: #191825;
+
+        &.active {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            z-index: 10;
+            backdrop-filter: blur(10px);
+            // background-color: var(--bg-primary-color);
+            background-color: #020114;
+            border-bottom: 1px solid #ffffff2f;
+
+        }
+
+
+    }
+}
+
+// @media (max-width: 900px) {
+//     .header-home {
+//         .header-home-scroll {
+//             display: none;
+//         }
+//     }
+// }

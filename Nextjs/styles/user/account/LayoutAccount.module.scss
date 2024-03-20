@@ -1,0 +1,205 @@
+.account_container {
+    overflow: hidden;
+
+    >.account_content {
+        min-height: 300px;
+        margin-top: 30px;
+        display: flex;
+        padding: 10px;
+        gap: 10px;
+        position: relative;
+
+        >.left {
+            width: 300px;
+            min-height: 200px;
+            background-color: #0b0b0b;
+            border-radius: 3px;
+            height: fit-content;
+            padding: 10px 0;
+
+            >.Wrap_avatar {
+                display: flex;
+                justify-content: center;
+                padding: 10px 0;
+                gap: 10px;
+                align-items: center;
+
+                >.left {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-size: cover;
+                    background-position: center;
+                    background-image: url('../../../public/images/user/no-user-image.jpg');
+                }
+
+                >.right {
+                    color: #fff;
+
+                    >.name {
+                        font-weight: 500;
+                        font-size: 1.4rem;
+                    }
+
+                    >.edit {
+                        display: flex;
+                        font-size: 1.1rem;
+                        align-items: center;
+                        gap: 4px;
+                        cursor: pointer;
+
+                        >i {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            >.navbar {
+
+                a,
+                div {
+                    font-size: 1.2rem;
+                }
+
+
+            }
+
+            >.icon_close_mobile {
+                color: #fff;
+                position: absolute;
+                top: 2px;
+                left: 6px;
+                display: none;
+
+                &:hover {
+                    opacity: .7;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        >.right {
+            flex: 1;
+            // background-color: #F5F5F5;
+        }
+
+        >.iconMenuMobile {
+            position: absolute;
+            top: 0;
+            right: 16px;
+            color: #fff;
+            font-size: 30px;
+            cursor: pointer;
+            display: none;
+
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .account_container {
+        >.account_content {
+            >.left {
+                width: 200px;
+                // min-height: 200px;
+                // background-color: #0b0b0b;
+                // border-radius: 3px;
+                // height: fit-content;
+                // padding: 10px 0;
+
+                // >.Wrap_avatar {
+                //     display: flex;
+                //     justify-content: center;
+                //     padding: 10px 0;
+                //     gap: 10px;
+                //     align-items: center;
+
+                //     >.left {
+                //         width: 50px;
+                //         height: 50px;
+                //         border-radius: 50%;
+                //         background-size: cover;
+                //         background-position: center;
+                //         background-image: url('https://cf.shopee.vn/file/5c787c319c4642f8ebfadc9a0dddfc92_tn');
+                //     }
+
+                //     >.right {
+                //         color: #000;
+
+                //         >.name {
+                //             font-weight: 500;
+                //         }
+
+                //         >.edit {
+                //             display: flex;
+                //             font-size: 12px;
+                //             align-items: center;
+                //             gap: 4px;
+                //             cursor: pointer;
+
+                //             >i {
+                //                 font-size: 12px;
+                //             }
+                //         }
+                //     }
+                // }
+
+                // >.navbar {}
+            }
+
+            >.right {
+                flex: 1;
+                // background-color: #F5F5F5;
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .account_container {
+        >.account_content {
+            min-height: 500px;
+
+            >.left {
+                width: 300px;
+                max-width: 100%;
+                top: 0;
+                right: -100%;
+                position: absolute;
+                z-index: 1;
+                transition: .3s linear;
+
+
+                &.active {
+                    right: 0;
+                    // border: 1px solid #fff;
+                }
+
+                >.Wrap_avatar {
+                    display: none;
+                }
+
+                >.navbar {
+                    margin-top: 15px;
+                }
+
+                >.icon_close_mobile {
+                    display: block;
+                }
+            }
+
+            >.right {
+                flex: 1;
+                // background-color: #F5F5F5;
+            }
+
+            >.iconMenuMobile {
+                display: block;
+            }
+        }
+    }
+}

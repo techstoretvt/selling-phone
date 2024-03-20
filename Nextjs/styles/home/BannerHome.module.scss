@@ -1,0 +1,215 @@
+.BannerHome_container {
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    // border: 1px solid #fff;
+
+    .navbar {
+        height: 30px;
+        width: 100%;
+        position: absolute;
+        // background-color: #33333320;
+        // backdrop-filter: blur(10px);
+        top: 0;
+        display: flex;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 10px;
+
+
+        .item {
+            font-size: 1rem;
+            cursor: pointer;
+
+            &:hover {
+                color: orange;
+            }
+        }
+
+        .separate {
+            border-left: 1px solid #fff;
+            height: 24px;
+        }
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: min(1000px, 100vw);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        // margin-top: 26px;
+
+        .left {
+            width: 50%;
+
+
+
+            img {
+                width: 100%;
+                height: auto;
+                filter: drop-shadow(0 20px 20px #000000);
+            }
+        }
+
+        .right {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+
+            .wrap_content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+
+                .title {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    i {
+                        font-size: 4rem;
+                    }
+
+                    .text {
+                        font-size: 4rem;
+                        font-weight: 500;
+                    }
+                }
+
+                .title2 {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .text {
+                        font-size: 2.4rem;
+                        // font-weight: 500;
+                    }
+                }
+
+                .price {
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    margin-bottom: 20px;
+
+                    .text {
+                        font-size: 1.4rem;
+                    }
+
+                    .number {
+                        font-size: 2rem;
+                        color: purple;
+                    }
+                }
+
+                .note {
+                    color: purple;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+// @media (max-width: 501px) {
+//     .BannerHome_container {
+//         height: 50vh;
+
+//         >.navbar {
+//             display: none;
+//         }
+
+//         div {
+//             font-size: 2.2rem;
+//         }
+
+//         p {
+//             font-size: 12px;
+//         }
+
+//         a {
+//             cursor: pointer;
+//         }
+//     }
+// }
+
+@media (max-width: 670px) {
+    .BannerHome_container {
+        height: 60vh;
+        // border: 1px solid #fff;
+
+        .content {
+            flex-direction: column;
+            justify-content: center;
+            height: unset !important;
+            // border: 1px solid #fff;
+
+            .right {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .BannerHome_container {
+        .content {
+
+            .left {
+                width: 60%;
+            }
+
+
+            .right {
+                .wrap_content {
+
+                    .title {
+                        i {
+                            font-size: 3rem;
+                        }
+
+                        .text {
+                            font-size: 3rem;
+                        }
+                    }
+
+                    .title2 {
+
+                        .text {
+                            font-size: 2rem;
+                        }
+                    }
+
+                    .price {
+
+                        .text {
+                            font-size: 1.2rem;
+                        }
+
+                        .number {
+                            font-size: 1.6rem;
+                        }
+                    }
+
+                    .note {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

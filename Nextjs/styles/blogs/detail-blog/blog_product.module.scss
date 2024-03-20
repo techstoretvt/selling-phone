@@ -1,0 +1,84 @@
+.BlogProduct_container {
+    min-height: 200px;
+    // border: 1px solid #fff;
+
+    >.header {
+        display: flex;
+        gap: 10px;
+
+        >.left {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            background-image: url('../../../public/images/user/no-user-image.jpg');
+        }
+
+        >.right {
+            >.name {
+                width: fit-content;
+                font-size: 1.2rem;
+            }
+
+            >.time {
+                font-size: 1rem;
+                color: #737373;
+            }
+        }
+    }
+
+    >.text {
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
+
+    >.media {
+        display: flex;
+        flex-wrap: wrap;
+
+        >.image {
+            flex: 1;
+            min-width: 25%;
+            max-width: 33.3333%;
+            aspect-ratio: 1/1;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            border: 5px solid transparent;
+            background-clip: content-box;
+            background-color: #333;
+            cursor: pointer;
+            height: auto;
+            margin: 0;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    >.nameProduct {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: antiquewhite;
+        color: #000;
+        text-transform: capitalize;
+
+        >.text {
+            margin: 0 auto;
+            width: fit-content;
+            font-size: 24px;
+            background: linear-gradient(to right, #283c86, #45a247);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-style: italic;
+            text-transform: capitalize;
+            cursor: pointer;
+
+            &:hover {
+                background: linear-gradient(to right, #6b72a5, #16f825);
+                background-clip: text;
+            }
+        }
+    }
+}

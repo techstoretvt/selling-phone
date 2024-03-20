@@ -1,0 +1,272 @@
+.FooterHome-containet {
+
+    &.unShow {
+        display: none;
+    }
+
+    .FooterHome-content {
+        min-height: 300px;
+        background-color: var(--bg-primary-color);
+        margin-top: 50px;
+
+        .FooterHome-top {
+            height: 100px;
+            background-color: rgba(255, 165, 0, .8);
+        }
+
+        .FooterHome-center {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+
+            .item {
+                width: 20%;
+                min-height: 100px;
+                padding: 5px;
+                margin-bottom: 30px;
+            }
+
+            .about {
+
+                .title {
+                    font-weight: bold;
+                    font-size: 1.6rem;
+                    color: var(--text-title-color);
+                    text-shadow: 0 0 .5em var(--text-title-color);
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+
+                .text {
+                    margin-top: 10px;
+                    font-size: 1.2rem;
+                    color: #fff;
+                    text-align: justify;
+                }
+
+                .icons {
+                    display: flex;
+                    margin-top: 20px;
+                    justify-content: center;
+
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 4px;
+                        border: 1px solid #ccc;
+                        color: #fff;
+                        cursor: pointer;
+                        transition: .3s linear;
+
+                        &:hover {
+                            border: 1px solid orange;
+                        }
+
+
+                        i {
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+
+            .contact {
+                .title {
+                    font-size: 1.6rem;
+                    color: var(--text-title-color);
+                    text-shadow: 0 0 .5em var(--text-title-color);
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+
+                .address,
+                .phongnumber,
+                .email {
+                    margin-top: 6px;
+                    color: #fff;
+                    text-align: justify;
+                    font-size: 1.2rem;
+
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+
+                .address {
+                    display: flex;
+                    align-items: center;
+                }
+
+            }
+
+            .support {
+                .title {
+                    font-size: 1.6rem;
+                    color: var(--text-title-color);
+                    text-shadow: 0 0 .5em var(--text-title-color);
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+
+                ul {
+                    padding: 0;
+                    margin-top: 10px;
+                    margin-left: 14px;
+                    color: #fff;
+                    text-align: center;
+
+                    li {
+                        margin-bottom: 10px;
+                        list-style: none;
+                        font-size: 1.2rem;
+
+                    }
+
+                    li:hover {
+                        opacity: .6;
+                    }
+                }
+            }
+
+            .link {
+                .title {
+                    font-size: 1.6rem;
+                    color: var(--text-title-color);
+                    text-shadow: 0 0 .5em var(--text-title-color);
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+
+                ul {
+                    margin-top: 10px;
+                    margin-left: 14px;
+                    color: #fff;
+                    padding: 0;
+                    text-align: center;
+
+                    li {
+                        list-style: none;
+                        margin-bottom: 10px;
+                        font-size: 1.2rem;
+                    }
+
+                    li:hover {
+                        opacity: .6;
+                    }
+                }
+            }
+        }
+
+        .FooterHome-bottom {
+            border-top: 1px solid #ccc;
+            text-align: center;
+            padding: 10px 0;
+            color: #fff;
+            font-size: 1.2rem;
+
+            a {
+                width: fit-content;
+                margin: 0 auto;
+
+            }
+
+            a:hover {
+
+                opacity: .7;
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .FooterHome-containet {
+        .FooterHome-content {
+            .FooterHome-center {
+
+                .item {
+                    width: 33.333%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .FooterHome-containet {
+        .FooterHome-content {
+            .FooterHome-center {
+
+                .item {
+                    width: 50%;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .FooterHome-containet {
+        .FooterHome-content {
+            .FooterHome-center {
+
+                .item {
+                    width: 50%;
+                    margin-bottom: 30px;
+
+                    .title {
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    .text {
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+
+                .about,
+                .contact,
+                .support,
+                .link {
+                    .title {
+                        font-size: 1.6rem;
+                    }
+
+                    .text {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .contact {
+
+                    .address,
+                    .phongnumber,
+                    .email {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .support,
+                .link {
+                    ul {
+                        li {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+
+            .FooterHome-bottom {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

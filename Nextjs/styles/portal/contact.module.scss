@@ -1,0 +1,145 @@
+.ContactPage_container {
+    >.ContactPage_content {
+        min-height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        color: #fff;
+        margin-top: 20px;
+
+        >.left {
+            padding: 10px;
+            // border: 1px solid #fff;
+            width: 50%;
+
+            >.top {
+                padding: 10px;
+                background-color: var(--bg-primary-color);
+                border-radius: 6px;
+
+                h3 {
+                    font-size: 1.6rem;
+                }
+
+                >.group {
+                    margin-top: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    >.item {
+                        width: 50%;
+                        display: flex;
+                        gap: 10px;
+                        align-items: flex-start;
+
+                        >.left {
+                            >.icon {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 10px;
+                                border: 1px solid #fff;
+                                border-radius: 50%;
+                                width: 30px;
+                                height: 30px;
+
+                                >i {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+
+                        >.right {
+                            padding: 0 10px;
+
+                            >h4 {
+                                font-size: 1.4rem;
+                            }
+
+                            >p {
+                                font-size: 1.2rem;
+                                color: #bfbfbf;
+                                text-align: justify;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            >.bottom {
+                margin-top: 20px;
+                padding: 10px;
+                background-color: var(--bg-primary-color);
+                border-radius: 6px;
+
+                >h3 {
+                    font-size: 1.6rem;
+                }
+
+                >p {
+                    font-size: 1.2rem;
+                    color: #bfbfbf;
+                }
+
+                >.form {
+
+                    >.wrapInput {
+                        margin: 10px 0;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        gap: 10px 0;
+                    }
+                }
+            }
+        }
+
+        >.right {
+            width: 50%;
+            // border: 1px solid #fff;
+            padding: 10px;
+
+            iframe {
+                width: 100%;
+                height: 100%;
+                border-radius: 6px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .ContactPage_container {
+        >.ContactPage_content {
+
+            >.left,
+            >.right {
+                width: 100%;
+                order: 2;
+            }
+
+            >.right {
+                min-height: 400px;
+                order: 1;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .ContactPage_container {
+        >.ContactPage_content {
+
+            >.left {
+                >.top {
+                    >.group {
+                        >.item {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.ListProduct-container {
+    .ListProduct-content {
+        display: flex;
+        flex-wrap: wrap;
+
+        .ListProduct-item {
+            width: 20%;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .ListProduct-container {
+        .ListProduct-content {
+            .ListProduct-item {
+                width: 25%;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .ListProduct-container {
+        .ListProduct-content {
+            .ListProduct-item {
+                width: 33.3333%;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .ListProduct-container {
+        .ListProduct-content {
+            .ListProduct-item {
+                width: 50%;
+            }
+        }
+    }
+}

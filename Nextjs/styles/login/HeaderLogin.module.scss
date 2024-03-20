@@ -1,0 +1,15 @@
+.HeaderLogin-container {
+    .HeaderLogin-content {
+        background-color: rgba(255, 255, 255, 0);
+        padding: 0 10px;
+
+        .HeaderLogin-logo {
+            width: 100px;
+            height: 40px;
+            background-size: cover;
+            background-image: url('../../public/images/logo/logo-full.webp');
+            position: fixed;
+            z-index: 1;
+        }
+    }
+}

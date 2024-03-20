@@ -1,0 +1,150 @@
+.GenuineFlycam-container {
+    .GenuineFlycam-content {
+        min-height: 300px;
+        margin: 40px 10px 10px;
+        background-color: var(--bg-primary-color);
+        border-radius: 10px;
+        padding-bottom: 20px;
+
+        .GenuineFlycam-top {
+            padding: 20px 10px;
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: var(--text-title-color);
+            text-shadow: 0 0 .5em var(--text-title-color);
+        }
+
+        .GenuineFlycam-bottom {
+            padding: 16px 10px;
+            background-color: var(--bg-primary-color);
+            backdrop-filter: blur(10px);
+            background-clip: padding-box;
+
+            .GenuineFlycam-bottom-container {
+
+                .GenuineFlycam-wrap {
+
+                    .GenuineFlycam-item {
+                        display: flex;
+                        // background-color: rgba(0, 0, 0, 0.731);
+                        color: #fff;
+
+                        &:nth-child(2) {
+                            border-top: 1px solid #ccc;
+                            border-bottom: 1px solid #ccc;
+                        }
+
+                        .left {
+                            height: 80px;
+                            width: 80px;
+                            flex-shrink: 0;
+                            margin: 10px;
+                            background-size: cover;
+                            // background-image: url('https://product.hstatic.net/200000516791/product/_6ce020f0-3215-48b2-ba8b-3aa5b099ab88_bbc7cfd8cf90467a919ddc253095909f_3b0eac3288144e61b0182b3103cff687_master.jpg');
+                        }
+
+                        .right {
+                            padding: 10px 0;
+
+                            .name {
+                                width: fit-content;
+                                font-size: 1.2rem;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 2;
+                                overflow: hidden;
+                                line-height: 16px;
+                                max-height: 32px;
+                                margin-top: 4px;
+                                text-transform: capitalize;
+                            }
+
+                            .price-promotion {
+                                color: red;
+                                font-weight: bold;
+                                font-size: 1.2rem;
+                                margin-top: 6px;
+                                height: 16px;
+                            }
+
+                            .price-wrap {
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+
+                                .price-number {
+                                    text-decoration: line-through;
+                                    font-size: 1.2rem;
+                                    color: #fff;
+
+                                    &.active {
+                                        color: red;
+                                        font-weight: bold;
+                                        text-decoration: none;
+                                        font-size: 1.2rem;
+                                        transform: translateY(-12px);
+                                    }
+                                }
+
+                                .price-number-promotion {
+                                    background-color: #fff;
+                                    color: red;
+                                    font-size: 1.1rem;
+                                    width: 30px;
+                                    height: 20px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    border-radius: 3px;
+                                    font-weight: bold;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .loading {
+                width: 100%;
+                min-height: 200px;
+                // background-color: aqua;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            // .slick-prev,
+            // .slick-next {
+            //     top: -14% !important;
+            // }
+
+            // .slick-prev {
+            //     left: unset;
+            //     right: 70px !important;
+            // }
+
+            // .slick-next {
+            //     right: 30px !important;
+            // }
+
+            // .slick-prev:before,
+            // .slick-next:before {
+            //     font-size: 30px !important;
+            // }
+        }
+    }
+}
+
+@media (max-width: 501px) {
+    .GenuineFlycam-container {
+        .GenuineFlycam-content {
+            margin: 40px 0px 10px;
+
+            .GenuineFlycam-top {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

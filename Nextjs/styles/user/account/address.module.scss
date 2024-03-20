@@ -1,0 +1,231 @@
+.addressUser_container {
+    >.addressUser_content {
+        color: #fff;
+
+        >.header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #5a5a5a;
+
+            >.left {
+                font-weight: 400;
+                font-size: 1.6rem;
+                color: var(--text-title-color);
+                text-shadow: 0 0 .5em var(--text-title-color);
+            }
+
+            >.right {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                background-color: red;
+                padding: 5px 10px;
+                border-radius: 4px;
+                cursor: pointer;
+
+                >.textBtn {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        >.list_address {
+            margin-top: 20px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            >.wrap_address {
+                display: flex;
+                padding: 10px 0;
+                justify-content: space-between;
+                border-bottom: 1px solid #ccc;
+                align-items: center;
+
+                >.left {
+
+                    >.nameAddress {
+                        text-transform: uppercase;
+                        font-size: 1.2rem;
+                        color: #737373;
+                    }
+
+                    >.nameAndSdt {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        font-size: 1.2rem;
+
+                        >.name {
+                            padding-right: 10px;
+                            border-right: 1px solid #ccc;
+                            text-transform: capitalize;
+                        }
+
+                        >.sdt {
+                            color: #737373;
+                        }
+                    }
+
+                    >.addressText {
+                        font-size: 1.2rem;
+                        color: #737373;
+                    }
+
+                    >.country {
+                        font-size: 1.2rem;
+                        color: #737373;
+                    }
+
+                    >.btn {
+                        color: red;
+                        font-size: 1.2rem;
+                        border: 1px solid red;
+                        width: fit-content;
+                        padding: 2px 6px;
+                        margin-top: 4px;
+                        display: none;
+
+                        &.active {
+                            display: block;
+                        }
+                    }
+                }
+
+                >.right {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    justify-content: center;
+                    gap: 6px;
+                    padding: 10px;
+
+                    >.text {
+                        color: orange;
+                        font-size: 1.2rem;
+                        cursor: pointer;
+
+                        &.hide {
+                            display: none;
+                        }
+                    }
+
+                    >.btn {
+                        border: 1px solid #ccc;
+                        font-size: 1.2rem;
+                        padding: 4px;
+                        cursor: pointer;
+
+                        &.hide {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 655px) {
+    .addressUser_container {
+        >.addressUser_content {
+
+            >.header {
+                margin-top: 30px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 600px) {
+    .addressUser_container {
+        >.addressUser_content {
+
+            >.list_address {
+
+                >.wrap_address {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    // >.left {
+
+                    //     >.nameAddress {
+                    //         text-transform: uppercase;
+                    //         font-size: 14px;
+                    //         color: #737373;
+                    //     }
+
+                    //     >.nameAndSdt {
+                    //         display: flex;
+                    //         gap: 10px;
+                    //         align-items: center;
+
+                    //         >.name {
+                    //             padding-right: 10px;
+                    //             border-right: 1px solid #ccc;
+                    //         }
+
+                    //         >.sdt {
+                    //             color: #737373;
+                    //             font-size: 14px;
+                    //         }
+                    //     }
+
+                    //     >.addressText {
+                    //         font-size: 14px;
+                    //         color: #737373;
+                    //     }
+
+                    //     >.country {
+                    //         font-size: 14px;
+                    //         color: #737373;
+                    //     }
+
+                    //     >.btn {
+                    //         color: red;
+                    //         font-size: 14px;
+                    //         border: 1px solid red;
+                    //         width: fit-content;
+                    //         padding: 2px 6px;
+                    //         margin-top: 4px;
+                    //         display: none;
+
+                    //         &.active {
+                    //             display: block;
+                    //         }
+                    //     }
+                    // }
+
+                    >.right {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: flex-end;
+
+                        >.text {
+                            color: orange;
+                            font-size: 14px;
+                            cursor: pointer;
+
+                            &:nth-child(2) {
+                                color: red;
+                                margin: 0 10px;
+                            }
+
+                            &.hide {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

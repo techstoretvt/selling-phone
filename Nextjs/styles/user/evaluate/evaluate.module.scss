@@ -1,0 +1,265 @@
+.evaluetaContainer {
+
+    >.evaluateContent {
+        width: min(calc(100vw - 10px), 900px);
+        min-height: 200px;
+        margin: 20px auto 0;
+        color: #fff;
+        padding: 10px;
+
+        >.header {
+            font-size: 1.6rem;
+            color: var(--text-title-color);
+            text-shadow: 0 0 .5em var(--text-title-color);
+            font-weight: 600;
+        }
+
+        >.product {
+            display: flex;
+            gap: 0 20px;
+            margin-top: 30px;
+
+            >.left {
+                width: 80px;
+                height: 80px;
+                background-color: rgb(31, 30, 30);
+                background-size: cover;
+                background-image: url('https://cf.shopee.vn/file/5c787c319c4642f8ebfadc9a0dddfc92_tn');
+                flex-shrink: 0;
+            }
+
+            >.right {
+
+                >.name {
+                    font-size: 1.4rem;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                    line-height: 24px;
+                    max-height: 48px;
+                }
+
+                >.classify {
+                    font-size: 1rem;
+                    color: #737373;
+                }
+            }
+        }
+
+        >.wrapStar {
+            margin-top: 20px;
+
+            >.text {
+                font-size: 1.4rem;
+            }
+
+            >.start_content {
+                margin-top: 4px;
+                width: fit-content;
+
+                >.label {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        >.note {
+            position: relative;
+            margin: 20px auto 0;
+            border: 1px solid #fff;
+            padding: 10px;
+
+            >.content {
+                outline: none;
+                min-height: 150px;
+
+
+                &:not(:empty)~.label {
+                    display: none;
+                }
+            }
+
+            >.label {
+                left: 10px;
+                top: 10px;
+                position: absolute;
+                color: #737373;
+                pointer-events: none;
+                font-size: 1.2rem;
+            }
+
+
+
+        }
+
+        >.noteLabel {
+            text-align: end;
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        >.media {
+            margin-top: 20px;
+
+
+            >.listImages {
+                // border: 1px solid #fff;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                &:not(:empty) {
+                    padding: 10px;
+                }
+
+                >.image {
+                    position: relative;
+
+
+                    &:hover {
+                        >.icons {
+                            display: flex;
+                        }
+                    }
+
+                    >.img {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 4px;
+                        background-image: url("https://cf.shopee.vn/file/5c787c319c4642f8ebfadc9a0dddfc92_tn");
+                        background-size: cover;
+                    }
+
+                    >.icons {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        display: flex;
+                        gap: 0 20px;
+                        transform: translate(-50%, -50%);
+                        background-color: #333;
+                        padding: 10px;
+                        display: none;
+
+                        >i {
+                            color: #fff;
+                            font-size: 14px;
+
+                            &:nth-child(1) {
+                                color: orange;
+                            }
+
+                            &:nth-child(2) {
+                                color: red;
+                            }
+
+                            &:hover {
+                                color: blue;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+
+            >.Btns {
+                display: flex;
+                flex-direction: column;
+                gap: 4px 0px;
+                position: relative;
+
+                // button {
+                //     width: fit-content;
+                // }
+            }
+        }
+
+        >.displayName {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            gap: 0 20px;
+
+            >.left {
+                position: relative;
+                cursor: pointer;
+
+                &.active {
+
+                    >.checkbox {
+                        display: block;
+                        background-color: red;
+                        border: none;
+                    }
+
+                    >i {
+                        display: block;
+                    }
+                }
+
+                >.checkbox {
+                    width: 18px;
+                    height: 18px;
+                    border: 1px solid #fff;
+                }
+
+                >i {
+                    position: absolute;
+                    color: #fff;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    display: none;
+                }
+            }
+
+            >.right {
+                color: #fff;
+                font-size: 1.2rem;
+
+                >.example {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        >.btn {
+            margin-top: 20px;
+            text-align: end;
+
+            button {
+                outline: none;
+                border: none;
+                background-color: red;
+                color: #fff;
+                padding: 6px 12px;
+                border-radius: 4px;
+
+                &:hover {
+                    opacity: .6;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 501px) {
+    .evaluetaContainer {
+        >.evaluateContent {
+            >.displayName {
+                >.right {
+
+                    >.title {
+                        font-size: 10px;
+                    }
+
+                    >.example {
+                        font-size: 8px;
+                    }
+                }
+            }
+
+        }
+    }
+}

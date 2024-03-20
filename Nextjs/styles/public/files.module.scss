@@ -1,0 +1,20 @@
+.FilePage_container {
+
+    >.FilePage_content {
+        display: flex;
+        gap: 10px;
+        padding: 20px;
+        flex-wrap: wrap;
+
+        >.item {
+            min-width: 100px;
+            // min-height: 50px;
+            color: #fff;
+            padding: 5px 10px;
+            font-size: 1.2rem;
+            border-radius: 4px;
+            border: 1px solid #fff;
+            cursor: pointer;
+        }
+    }
+}

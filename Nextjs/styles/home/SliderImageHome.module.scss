@@ -1,0 +1,93 @@
+.slider-image-container {
+    // padding-top: 20px;
+    margin-top: 10px;
+    z-index: 1;
+
+    .slider-image-content {
+        position: relative;
+
+        .bottom {
+            // height: calc(100vh - 70px);
+
+            .sliderTop {
+                // margin-bottom: 100px;
+
+                overflow: hidden;
+                border-radius: 4px;
+                height: calc(100vh - 100px);
+                display: flex;
+                align-items: center;
+                // border: 1px solid #fff;
+
+                .sliderTopWrap {
+                    position: relative;
+                    width: 100%;
+                    max-width: calc(100% - 40px);
+                    margin: 10px auto 0;
+                    border-radius: 4px;
+                    overflow: hidden;
+                    height: fit-content;
+                    // border: 1px solid #fff;
+                    // display: flex;
+
+
+                    .slider-item {
+                        border-radius: 4px;
+                        outline: none;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        // border: 1px solid red;
+                        background-color: #33333322;
+
+                        img {
+                            width: 100%;
+                            // border: 1px solid #fff;
+                            height: auto;
+                            display: block;
+                            // aspect-ratio: 2/1;
+                            // object-fit: contain;
+                        }
+
+
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .slider-image-container {
+
+        .slider-image-content {
+
+            .bottom {
+
+                .sliderTop {
+                    // border: 1px solid #fff;
+                    height: fit-content;
+                    margin-top: 60px;
+
+                    .sliderTopWrap {
+                        max-width: calc(100% - 10px);
+                        margin: 00px 5px 0;
+
+                        .slider-item {
+                            // border: 1px solid #fff;
+
+                            img {
+                                // height: 500px;
+                                // width: au;
+                                object-fit: cover;
+                                object-position: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
